@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<!-- ========================================================= -->
+<!-- 此處插入 GTM 追蹤碼（Google Tag Manager — <head> 主代碼） -->
+<!-- 請將 GTM 後台「Install Google Tag Manager」第一段 <script> -->
+<!-- 貼在這裡（盡量靠近 <head> 最上方）。                      -->
+<!-- ========================================================= -->
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<!-- ========================================================= -->
+<!-- SEO 基本 Meta 標籤（請依實際內容修改下方預留位置）          -->
+<!-- ========================================================= -->
+<!-- 標題：建議 30 字內，放最重要的服務 + 地區關鍵字 -->
+<title>阿布拉 ABURA — 中台灣在地包車接送職人</title>
+<!-- 網頁描述：建議 70–80 字，會顯示在 Google 搜尋結果摘要 -->
+<meta name="description" content="把心力留給旅遊或商務行程，開車及接駁不該是您的煩惱。中台灣在地職人司機阿布拉，為您打造高質感的移動生活。" />
+<!-- 關鍵字（選填，現代 SEO 影響不大，可保留或刪除） -->
+<meta name="keywords" content="包車, 中台灣包車, 台中包車旅遊, 機場接送, 商務接送, 親子包車" />
+<!-- 標準網址：上線後改成你的正式網域，避免重複內容問題 -->
+<link rel="canonical" href="https://abura-6j67.vercel.app/" />
+
+<!-- ========================================================= -->
+<!-- Open Graph 標籤（LINE / Facebook 分享預覽用）              -->
+<!-- 分享連結時顯示的標題、描述與縮圖。圖片建議 1200×630 px。    -->
+<!-- ========================================================= -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="阿布拉 ABURA" />
+<meta property="og:locale" content="zh_TW" />
+<meta property="og:title" content="阿布拉 ABURA — 中台灣在地包車接送職人" />
+<meta property="og:description" content="把心力留給旅遊或商務行程，開車及接駁不該是您的煩惱。中台灣在地職人司機阿布拉，為您打造高質感的移動生活。" />
+<!-- 分享網址：上線後改成正式網域 -->
+<meta property="og:url" content="https://abura-6j67.vercel.app/" />
+<!-- 分享縮圖：請換成 1200×630 px 的圖片完整網址（需含 https://） -->
+<meta property="og:image" content="https://abura-6j67.vercel.app/og-cover.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="阿布拉 ABURA 包車接送服務" />
+
+<!-- ========================================================= -->
+<!-- Twitter / X 卡片（選填，分享到 X 時的預覽）                -->
+<!-- ========================================================= -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="阿布拉 ABURA — 中台灣在地包車接送職人" />
+<meta name="twitter:description" content="把心力留給旅遊或商務行程，開車及接駁不該是您的煩惱。中台灣在地職人司機阿布拉，為您打造高質感的移動生活。" />
+<meta name="twitter:image" content="https://abura-6j67.vercel.app/og-cover.jpg" />
+<!-- ========================================================= -->
+<!-- SEO Meta 結束                                              -->
+<!-- ========================================================= -->
+
+<!-- Resources referenced from JS/JSX (lifted for offline bundling) -->
+<meta name="ext-resource-dependency" content="asset/hero-base.webp" data-resource-id="heroBase" />
+<meta name="ext-resource-dependency" content="asset/hero-hand.webp" data-resource-id="heroHand" />
+<meta name="ext-resource-dependency" content="asset/map-pin.webp" data-resource-id="mapPin" />
+<meta name="ext-resource-dependency" content="asset/feat-charge.webp" data-resource-id="featCharge" />
+<meta name="ext-resource-dependency" content="asset/feat-cup.webp" data-resource-id="featCup" />
+<meta name="ext-resource-dependency" content="asset/feat-hook.webp" data-resource-id="featHook" />
+<meta name="ext-resource-dependency" content="asset/feat-childseat.webp" data-resource-id="featChildseat" />
+<meta name="ext-resource-dependency" content="asset/cloud-frame.webp" data-resource-id="cloudFrame" />
+<meta name="ext-resource-dependency" content="asset/abura-portrait.webp" data-resource-id="aburaPortrait" />
+<meta name="ext-resource-dependency" content="asset/landscape-band.webp" data-resource-id="landscapeBand" />
+<meta name="ext-resource-dependency" content="asset/car-side.webp" data-resource-id="carSide" />
+<script>
+  // Resolve an asset id to a bundled blob URL when present, else the dev path.
+  window.__asset = function (id, path) {
+    return (window.__resources && window.__resources[id]) || path;
+  };
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="tailwind.css?v=9">
+
+<style>
+  :root {
+    /* default palette — 原 (sage+mauve+persimmon) */
+    --paper:       #ECE3CC;
+    --paper-deep:  #E0D4B6;
+    --sage:        #9CB290;
+    --sage-deep:   #6F7E5A;
+    --mauve:       #A28590;
+    --mauve-deep:  #7E5E6B;
+    --persimmon:   #D9854A;
+    --persimmon-deep: #A0633A;
+    --olive:       #7C8E5C;
+    --indigo:      #4D6275;
+    --taiwan-line: #92A36B;
+    --ink:         #2C2A23;
+    --ink-soft:    #5C564B;
+
+    --brush-scale: 14;  /* irregular edge displacement */
+    --brush-flyaway: 0.55; /* 飛白 intensity 0..1 */
+    --car-speed:   1;
+    --hero-comp:   "mountain"; /* mountain | sea | city */
+
+    --serif-zh: 'Noto Serif TC', serif;
+    --serif-en: 'Cormorant Garamond', serif;
+  }
+  html, body { background: var(--paper); color: var(--ink); }
+  body {
+    font-family: var(--serif-zh);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    overscroll-behavior-y: none;
+  }
+  ::selection { background: var(--persimmon); color: var(--paper); }
+
+  /* Latin chars inside Chinese text get the serif EN font */
+  .mix { font-family: var(--serif-en), var(--serif-zh); }
+  .zh  { font-family: var(--serif-zh); }
+  .en  { font-family: var(--serif-en); }
+
+  /* paper grain backdrop */
+  .grain::before {
+    content:""; position:absolute; inset:0; pointer-events:none;
+    background-image:
+      radial-gradient(rgba(80,60,30,.05) 1px, transparent 1.2px),
+      radial-gradient(rgba(80,60,30,.04) 1px, transparent 1.2px);
+    background-size: 3px 3px, 7px 7px;
+    background-position: 0 0, 1.5px 1.5px;
+    mix-blend-mode: multiply;
+    opacity:.6;
+  }
+
+  /* vertical writing mode utility for Japanese-y bits */
+  .vrl { writing-mode: vertical-rl; text-orientation: mixed; }
+
+  /* small caps utility */
+  .smallcaps { font-variant-caps: all-small-caps; letter-spacing: .12em; }
+
+  /* dashed/dotted decorative line */
+  .ink-line { background-image: linear-gradient(90deg, var(--ink) 0 6px, transparent 6px 14px); background-size: 14px 1px; background-repeat: repeat-x; }
+
+  /* hide native scrollbar but keep scrolling */
+  ::-webkit-scrollbar { width: 0; height: 0; }
+
+  /* Mobile/tablet: native horizontal swipe filmstrip — hide bar, momentum scroll */
+  .mob-scroller { scrollbar-width: none; -ms-overflow-style: none; overscroll-behavior: contain; touch-action: none; cursor: grab; }
+  .mob-scroller:active { cursor: grabbing; }
+  .mob-scroller::-webkit-scrollbar { display: none; width: 0; height: 0; }
+
+  /* Mobile FAQ panel scrolls vertically inside its filmstrip slide */
+  .mob-faq-scroll { scrollbar-width: none; -ms-overflow-style: none; overscroll-behavior: contain; touch-action: none; }
+  .mob-faq-scroll::-webkit-scrollbar { display: none; width: 0; height: 0; }
+
+  /* Hero driver waving hand */
+  .hero-wave {
+    transform-origin: 57.7% 54.3%;
+    animation: heroWave 2.6s ease-in-out infinite;
+    will-change: transform;
+  }
+  @keyframes heroWave {
+    0%       { transform: rotate(-2deg); }
+    10%      { transform: rotate(-13deg); }
+    22%      { transform: rotate(11deg); }
+    34%      { transform: rotate(-10deg); }
+    46%      { transform: rotate(9deg); }
+    58%      { transform: rotate(-5deg); }
+    70%, 100%{ transform: rotate(0deg); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-wave { animation: none; }
+  }
+
+  /* Pain-section capsules: gentle continuous up/down float */
+  @keyframes floatY {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-14px); }
+  }
+  .float-cap { animation: floatY 4.5s ease-in-out infinite; will-change: transform; }
+  @media (prefers-reduced-motion: reduce) {
+    .float-cap { animation: none; }
+  }
+
+  /* Hardware photos — hover to enlarge */
+  .zoom-photo { position: relative; transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease; will-change: transform; }
+  .zoom-photo:hover { transform: scale(1.9) rotate(0deg) !important; z-index: 60; box-shadow: 0 4px 12px rgba(60,50,35,0.22); }
+
+  /* Mobile/tablet arc photos — image + caption enlarge together on hover */
+  .arc-photo { position: relative; transition: transform .35s cubic-bezier(.2,.7,.2,1); will-change: transform; transform-origin: center center; }
+  .arc-photo:hover { transform: scale(1.7); z-index: 60; }
+
+  /* gentle drift for the cloud frames */
+  @keyframes driftY {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-9px); }
+  }
+  .cloud-drift { animation: driftY 6s ease-in-out infinite; will-change: transform; }
+  @media (prefers-reduced-motion: reduce) { .cloud-drift { animation: none; } }
+
+  /* Scroll-reveal for testimonial cards: hidden until the panel is in view */
+  .reveal-card { opacity: 0; transform: translateY(34px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
+  .reveal-card.is-in { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-card { opacity: 1; transform: none; transition: none; }
+  }
+
+  /* Loading splash */
+  #splash {
+    position: fixed; inset: 0; z-index: 9999;
+    background: var(--paper);
+    display: flex; align-items: center; justify-content: center;
+    transition: opacity .8s ease, visibility .8s ease;
+  }
+  #splash.hidden { opacity: 0; visibility: hidden; }
+  #splash .mark { font-family: var(--serif-en); font-size: 4rem; letter-spacing: .3em; color: var(--persimmon); }
+
+  /* Tweaks panel chrome adjustments to match aesthetic */
+  .tweaks-panel-root, .tweaks-panel-root * {
+    font-family: var(--serif-zh) !important;
+  }
+
+  /* Phone / portrait-tablet (<768px) use a dedicated vertical layout (mobile.jsx). */
+</style>
+
+<template id="__bundler_thumbnail" data-bg-color="#ECE3CC">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="#ECE3CC"/>
+  <path d="M0 70 Q25 60 50 65 T100 70 L100 100 L0 100 Z" fill="#9CB290"/>
+  <circle cx="78" cy="28" r="10" fill="#D9854A"/>
+  <rect x="32" y="55" width="40" height="18" rx="4" fill="#fff" stroke="#2C2A23" stroke-width="1"/>
+  <rect x="36" y="59" width="14" height="8" rx="1" fill="#A28590"/>
+  <circle cx="40" cy="74" r="3" fill="#2C2A23"/>
+  <circle cx="64" cy="74" r="3" fill="#2C2A23"/>
+  <text x="50" y="92" text-anchor="middle" font-family="serif" font-size="9" fill="#2C2A23" font-style="italic">abura</text>
+</svg>
+</template>
+</head>
+
+<body>
+<!-- ========================================================= -->
+<!-- 此處插入 GTM 追蹤碼（Google Tag Manager — <body> noscript） -->
+<!-- 請將 GTM 後台第二段 <noscript> 代碼貼在這裡               -->
+<!-- （需緊接在 <body> 開始標籤之後）。                        -->
+<!-- ========================================================= -->
+
+  <div id="splash"><div class="mark">abura</div></div>
+  <script>
+    // Hide splash as soon as fonts are ready (independent of React mounting).
+    (function(){
+      function hideSplash(){
+        var s = document.getElementById('splash');
+        if (s && s.parentNode) s.parentNode.removeChild(s);
+      }
+      if (document.fonts && document.fonts.ready) {
+        Promise.race([document.fonts.ready, new Promise(r=>setTimeout(r, 1500))]).then(()=>setTimeout(hideSplash, 200));
+      } else {
+        setTimeout(hideSplash, 1200);
+      }
+      // safety net — always remove after 3s
+      setTimeout(hideSplash, 3000);
+    })();
+  </script>
+  <div id="root"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+  <script src="js/app.bundle.js?v=9" defer></script>
+  
+
+  
+  
+  
+  
+  
+  
+
+  <!-- tweaks-panel.jsx -->
+  
+
+  <!-- brush.jsx -->
+  
+
+  <!-- scenes.jsx -->
+  
+
+  <!-- sections.jsx -->
+  
+
+  <!-- mobile-view.jsx -->
+  
+
+  <!-- app.jsx -->
+  
+
+  <!-- Swipe hint: shows briefly on load (touch devices only), auto-hides ~3s -->
+  <div id="swipe-hint" aria-hidden="true">
+    <div class="sh-pill">
+      <svg class="sh-chev" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"></path></svg>
+      <span class="sh-dot"></span>
+      <svg class="sh-chev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"></path></svg>
+    </div>
+    <span class="sh-label">左右滑動</span>
+  </div>
+  <style>
+    #swipe-hint{ position:fixed; left:50%; bottom:10vh; transform:translateX(-50%);
+      z-index:99999; pointer-events:none; display:flex; flex-direction:column;
+      align-items:center; gap:9px; opacity:0; transition:opacity .55s ease; }
+    #swipe-hint.show{ opacity:1; }
+    #swipe-hint .sh-pill{ position:relative; display:flex; align-items:center; gap:14px;
+      padding:11px 18px; border-radius:999px; background:rgba(253,251,246,.94);
+      border:1px solid rgba(60,50,35,.12); box-shadow:0 2px 10px rgba(60,50,35,.14); }
+    #swipe-hint .sh-chev{ width:18px; height:18px; flex:0 0 auto; }
+    #swipe-hint .sh-chev path{ fill:none; stroke:var(--persimmon); stroke-width:2.4;
+      stroke-linecap:round; stroke-linejoin:round; opacity:.55; }
+    #swipe-hint .sh-dot{ width:14px; height:14px; border-radius:50%;
+      background:var(--persimmon); animation:shSlide 1.35s ease-in-out infinite; }
+    #swipe-hint .sh-label{ font-family:var(--serif-zh); font-size:.84rem;
+      letter-spacing:.1em; color:var(--ink-soft); }
+    @keyframes shSlide{ 0%,100%{ transform:translateX(-10px); } 50%{ transform:translateX(10px); } }
+    @media (prefers-reduced-motion: reduce){ #swipe-hint .sh-dot{ animation:none; } }
+  </style>
+  <script>
+    (function(){
+      var el = document.getElementById('swipe-hint');
+      if(!el) return;
+      var coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+      if(!coarse){ el.remove(); return; }   // swipe hint only makes sense on touch
+      setTimeout(function(){ el.classList.add('show'); }, 350);
+      setTimeout(function(){ el.classList.remove('show'); }, 3200);
+      setTimeout(function(){ el.remove(); }, 3800);
+    })();
+  </script>
+
+</body>
+</html>
