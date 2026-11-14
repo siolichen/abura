@@ -1,0 +1,6 @@
+# robots.txt — https://www.aburakenji.com
+# 開放所有搜尋引擎抓取全站
+User-agent: *
+Allow: /
+
+Sitemap: https://www.aburakenji.com/sitemap.xml

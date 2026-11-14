@@ -20,16 +20,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 <!-- ========================================================= -->
+<!-- Google Search Console 網站驗證（HTML 標記法）              -->
+<!-- 到 GSC 新增資源 https://www.aburakenji.com → 選「HTML 標記」， -->
+<!-- 把 content 裡的 PASTE_GSC_VERIFICATION_CODE 換成 GSC 給的驗證碼。 -->
+<!-- ========================================================= -->
+<meta name="google-site-verification" content="PASTE_GSC_VERIFICATION_CODE" />
+
+<!-- ========================================================= -->
 <!-- SEO 基本 Meta 標籤（請依實際內容修改下方預留位置）          -->
 <!-- ========================================================= -->
 <!-- 標題：建議 30 字內，放最重要的服務 + 地區關鍵字 -->
 <title>阿布拉 ABURA — 中台灣在地包車接送職人</title>
 <!-- 網頁描述：建議 70–80 字，會顯示在 Google 搜尋結果摘要 -->
-<meta name="description" content="把心力留給旅遊或商務行程，開車及接駁不該是您的煩惱。中台灣在地職人司機阿布拉，為您打造高質感的移動生活。" />
+<meta name="description" content="中台灣包車接送找阿布拉：機場接送、跨縣市移動、家庭出遊與商務用車。在地司機熟路、開車穩，出發前先確認時間、地點、人數與行李，加 LINE 即可詢問預約。" />
 <!-- 關鍵字（選填，現代 SEO 影響不大，可保留或刪除） -->
 <meta name="keywords" content="包車, 中台灣包車, 台中包車旅遊, 機場接送, 商務接送, 親子包車" />
 <!-- 標準網址：上線後改成你的正式網域，避免重複內容問題 -->
-<link rel="canonical" href="https://abura-6j67.vercel.app/" />
+<link rel="canonical" href="https://www.aburakenji.com/" />
 
 <!-- ========================================================= -->
 <!-- Open Graph 標籤（LINE / Facebook 分享預覽用）              -->
@@ -39,11 +46,11 @@
 <meta property="og:site_name" content="阿布拉 ABURA" />
 <meta property="og:locale" content="zh_TW" />
 <meta property="og:title" content="阿布拉 ABURA — 中台灣在地包車接送職人" />
-<meta property="og:description" content="把心力留給旅遊或商務行程，開車及接駁不該是您的煩惱。中台灣在地職人司機阿布拉，為您打造高質感的移動生活。" />
+<meta property="og:description" content="中台灣包車接送找阿布拉：機場接送、跨縣市移動、家庭出遊與商務用車。在地司機熟路、開車穩，加 LINE 即可詢問預約。" />
 <!-- 分享網址：上線後改成正式網域 -->
-<meta property="og:url" content="https://abura-6j67.vercel.app/" />
+<meta property="og:url" content="https://www.aburakenji.com/" />
 <!-- 分享縮圖：請換成 1200×630 px 的圖片完整網址（需含 https://） -->
-<meta property="og:image" content="https://abura-6j67.vercel.app/og-cover.jpg" />
+<meta property="og:image" content="https://www.aburakenji.com/og-cover.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="阿布拉 ABURA 包車接送服務" />
@@ -53,8 +60,8 @@
 <!-- ========================================================= -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="阿布拉 ABURA — 中台灣在地包車接送職人" />
-<meta name="twitter:description" content="把心力留給旅遊或商務行程，開車及接駁不該是您的煩惱。中台灣在地職人司機阿布拉，為您打造高質感的移動生活。" />
-<meta name="twitter:image" content="https://abura-6j67.vercel.app/og-cover.jpg" />
+<meta name="twitter:description" content="中台灣包車接送找阿布拉：機場接送、跨縣市移動、家庭出遊與商務用車。在地司機熟路、開車穩，加 LINE 即可詢問預約。" />
+<meta name="twitter:image" content="https://www.aburakenji.com/og-cover.jpg" />
 <!-- ========================================================= -->
 <!-- SEO Meta 結束                                              -->
 <!-- ========================================================= -->
@@ -219,7 +226,22 @@
     transition: opacity .8s ease, visibility .8s ease;
   }
   #splash.hidden { opacity: 0; visibility: hidden; }
-  #splash .mark { font-family: var(--serif-en); font-size: 4rem; letter-spacing: .3em; color: var(--persimmon); }
+  #splash .sp-wrap { width: min(72vw, 460px); --p: 0; --cw: clamp(84px, 22vw, 120px); }
+  #splash .sp-road { position: relative; padding-top: calc(var(--cw) * 0.6); }
+  #splash .sp-car {
+    position: absolute; bottom: 5px; left: calc((100% - var(--cw)) * var(--p));
+    width: var(--cw); height: auto; display: block;
+    transform: scaleX(-1); /* source art faces left; flip so it drives to the right */
+    filter: drop-shadow(0 2px 4px rgba(60,40,20,.25));
+    user-select: none; pointer-events: none;
+  }
+  #splash .sp-track { height: 3px; border-radius: 3px; background: rgba(44,42,35,.18); overflow: hidden; }
+  #splash .sp-fill { height: 100%; width: calc(var(--p) * 100%); background: var(--persimmon); }
+  #splash .sp-num {
+    margin-top: 14px; text-align: center; font-family: var(--serif-en); font-style: italic;
+    font-size: 1.6rem; line-height: 1; letter-spacing: .04em; color: var(--ink);
+    font-variant-numeric: tabular-nums;
+  }
 
   /* Tweaks panel chrome adjustments to match aesthetic */
   .tweaks-panel-root, .tweaks-panel-root * {
@@ -250,21 +272,54 @@
 <!-- （需緊接在 <body> 開始標籤之後）。                        -->
 <!-- ========================================================= -->
 
-  <div id="splash"><div class="mark">abura</div></div>
+  <div id="splash" role="status" aria-label="載入中">
+    <div class="sp-wrap" id="sp-wrap">
+      <div class="sp-road">
+        <img class="sp-car" id="sp-car" alt="" aria-hidden="true" draggable="false">
+        <div class="sp-track"><div class="sp-fill"></div></div>
+      </div>
+      <div class="sp-num" id="sp-num">0%</div>
+    </div>
+  </div>
   <script>
     // Hide splash as soon as fonts are ready (independent of React mounting).
     (function(){
+      var ready = false;
       function hideSplash(){
         var s = document.getElementById('splash');
-        if (s && s.parentNode) s.parentNode.removeChild(s);
+        if (!s || s.classList.contains('hidden')) return;
+        s.classList.add('hidden');
+        setTimeout(function(){ if (s.parentNode) s.parentNode.removeChild(s); }, 850);
       }
       if (document.fonts && document.fonts.ready) {
-        Promise.race([document.fonts.ready, new Promise(r=>setTimeout(r, 1500))]).then(()=>setTimeout(hideSplash, 200));
+        Promise.race([document.fonts.ready, new Promise(r=>setTimeout(r, 2500))]).then(function(){ ready = true; });
       } else {
-        setTimeout(hideSplash, 1200);
+        setTimeout(function(){ ready = true; }, 1200);
       }
       // safety net — always remove after 3s
-      setTimeout(hideSplash, 3000);
+      setTimeout(function(){ ready = true; }, 3500);
+      setTimeout(hideSplash, 7000);
+
+      // The car drives along the bar from 0 to 100; the number sits under the bar.
+      var wrap = document.getElementById('sp-wrap');
+      var num = document.getElementById('sp-num');
+      var car = document.getElementById('sp-car');
+      if (car) car.src = window.__asset('carSide', 'asset/car-side.webp');
+      var p = 0, t0 = 0;
+      function tick(now){
+        if (!wrap || !wrap.isConnected) return;
+        if (!t0) t0 = now;
+        // creep toward 90 while loading, then run to 100 once the page is ready
+        var target = ready ? 100 : 90 * (1 - Math.exp(-(now - t0) / 900));
+        var step = (target - p) * 0.12;
+        if (ready) step = Math.max(step, 0.8);
+        p = Math.min(100, Math.max(p, p + step));
+        wrap.style.setProperty('--p', (p / 100).toFixed(4));
+        if (num) num.textContent = Math.round(p) + '%';
+        if (p >= 99.95) { setTimeout(hideSplash, 350); return; }
+        requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
     })();
   </script>
   <div id="root"></div>

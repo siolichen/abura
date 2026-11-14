@@ -2217,7 +2217,7 @@ function HeroSection({
       fontSize: 'clamp(1rem, 2.4vw, 1.4rem)',
       maxWidth: '42ch'
     }
-  }, "\u628A\u8DEF\u4E0A\u7684\u7463\u4E8B\u4EA4\u7D66\u4E2D\u53F0\u7063\u5728\u5730\u53F8\u6A5F\u963F\u5E03\u62C9\uFF0C\u9AD4\u9A57\u771F\u6B63", /*#__PURE__*/React.createElement("span", {
+  }, "在中台灣包車，", /*#__PURE__*/React.createElement("br", null), "可以像有個", /*#__PURE__*/React.createElement("span", {
     className: "en italic align-middle px-0.5",
     style: {
       color: 'var(--persimmon)',
@@ -2228,13 +2228,13 @@ function HeroSection({
     style: {
       color: 'var(--ink)'
     }
-  }, "\u653E\u7A7A"), /*#__PURE__*/React.createElement("span", {
+  }, "在地朋友"), /*#__PURE__*/React.createElement("span", {
     className: "en italic align-middle px-0.5",
     style: {
       color: 'var(--persimmon)',
       fontSize: '1.4em'
     }
-  }, "\""), "\u7684\u9AD8\u8CEA\u611F\u79FB\u52D5\u751F\u6D3B\u3002")), /*#__PURE__*/React.createElement("div", {
+  }, "\""), "來接您那樣。", /*#__PURE__*/React.createElement("br", null), "從機場接送、跨縣市移動，", /*#__PURE__*/React.createElement("br", null), "到家庭出遊與商務用車，", /*#__PURE__*/React.createElement("br", null), "阿布拉熟路、開車穩，", /*#__PURE__*/React.createElement("br", null), "也會替您想怎麼走最方便。")), /*#__PURE__*/React.createElement("div", {
     ref: illoRef,
     className: "mt-[3.5vh]",
     style: {
@@ -2306,7 +2306,7 @@ function HeroSection({
     style: {
       color: 'var(--ink-soft)'
     }
-  }, "\u628A\u8DEF\u4E0A\u7684\u7463\u4E8B\u4EA4\u7D66\u4E2D\u53F0\u7063\u5728\u5730\u53F8\u6A5F\u963F\u5E03\u62C9\uFF0C", /*#__PURE__*/React.createElement("br", null), "\u9AD4\u9A57\u771F\u6B63", /*#__PURE__*/React.createElement("span", {
+  }, "在中台灣包車，", /*#__PURE__*/React.createElement("br", null), "可以像有個", /*#__PURE__*/React.createElement("span", {
     className: "en italic text-[1.4em] align-middle px-0.5",
     style: {
       color: 'var(--persimmon)'
@@ -2316,27 +2316,27 @@ function HeroSection({
     style: {
       color: 'var(--ink)'
     }
-  }, "\u653E\u7A7A"), /*#__PURE__*/React.createElement("span", {
+  }, "在地朋友"), /*#__PURE__*/React.createElement("span", {
     className: "en italic text-[1.4em] align-middle px-0.5",
     style: {
       color: 'var(--persimmon)'
     }
-  }, "\""), "\u7684\u9AD8\u8CEA\u611F\u79FB\u52D5\u751F\u6D3B\u3002")))), /*#__PURE__*/React.createElement(PanelFooter, null, "scroll \u2192"));
+  }, "\""), "來接您那樣。", /*#__PURE__*/React.createElement("br", null), "從機場接送、跨縣市移動，", /*#__PURE__*/React.createElement("br", null), "到家庭出遊與商務用車，", /*#__PURE__*/React.createElement("br", null), "阿布拉熟路、開車穩，", /*#__PURE__*/React.createElement("br", null), "也會替您想怎麼走最方便。")))), /*#__PURE__*/React.createElement(PanelFooter, null, "scroll \u2192"));
 }
 
 // ─────────────────────────── 02 Pain points ───────────────────────────
 const PAIN_ITEMS = [{
-  title: ['消失的', '好心情'],
-  body: '找車位讓人好焦慮，好心情也消耗殆盡。'
+  title: ['行李放得下，', '腿伸得開嗎？'],
+  body: '一家人帶行李出門，\n車內空間夠不夠，\n長途最有感。'
 }, {
-  title: ['耗盡的', '體力'],
-  body: '牽就大眾運輸的時間好累人，無法自在從容。'
+  title: ['想在車上休息，', '開得穩嗎？'],
+  body: '才想閉眼歇一下，\n就被一個急煞嚇醒。'
 }, {
-  title: ['時間運用', '無彈性'],
-  body: '想回信或小憩，卻得專心開車。'
+  title: ['和司機相處', '自在嗎？'],
+  body: '想聊就聊，\n想安靜看風景也自在。'
 }, {
-  title: ['隨機叫車', '的擔憂'],
-  body: '車內侷促，或司機磁場讓你不安。'
+  title: ['行程排好了，', '會不會太趕？'],
+  body: '車程留多久、哪一站先去，\n預約時可以先聊聊。'
 }];
 
 // staggered vertical offsets + float timing, echoing the reference layout
@@ -2414,18 +2414,17 @@ function PainSection({
       fontSize: 'clamp(1.5rem, 2.8vw, 2.8rem)',
       color: 'var(--ink)'
     }
-  }, "\u4F60\u662F\u5426\u4E5F\u66FE\u9047\u904E\u9019\u4E9B\u8B93", /*#__PURE__*/React.createElement("span", {
+  }, "預約包車，您最在意哪些", /*#__PURE__*/React.createElement("span", {
     style: {
       color: 'var(--persimmon)'
     }
-  }, "\u5047\u671F"), "\u53CA", /*#__PURE__*/React.createElement("span", {
-    style: {
-      color: 'var(--mauve-deep)'
-    }
-  }, "\u5546\u52D9\u884C\u7A0B"), "\u6263\u5206\u7684\u77AC\u9593\uFF1F")), /*#__PURE__*/React.createElement("div", {
+  }, "細節"), "？")), /*#__PURE__*/React.createElement("div", {
     className: "flex-1 flex items-center justify-center"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "w-full flex items-center justify-center gap-[3vw]"
+    className: "w-full flex items-center justify-center gap-[3vw]",
+    style: {
+      gap: '1.4vw'
+    }
   }, PAIN_ITEMS.map((it, i) => {
     const L = PAIN_LAYOUT[i];
     return /*#__PURE__*/React.createElement("div", {
@@ -2443,11 +2442,14 @@ function PainSection({
       fill: CAP,
       stroke: "none",
       style: {
-        width: 'clamp(168px, 16.5vw, 238px)',
-        height: 'clamp(244px, 38vh, 388px)'
+        width: 'clamp(190px, 19.5vw, 290px)',
+        height: 'clamp(280px, 44vh, 450px)'
       }
     }, /*#__PURE__*/React.createElement("div", {
-      className: "w-full h-full flex flex-col items-center justify-center text-center px-6"
+      className: "w-full h-full flex flex-col items-center justify-center text-center px-6",
+      style: {
+        padding: '0 13%'
+      }
     }, /*#__PURE__*/React.createElement("span", {
       className: "en italic font-medium leading-none mb-3",
       style: {
@@ -2457,7 +2459,7 @@ function PainSection({
     }, "0", i + 1), /*#__PURE__*/React.createElement("h3", {
       className: "zh font-bold leading-[1.2]",
       style: {
-        fontSize: 'clamp(1.2rem, 1.5vw, 1.62rem)',
+        fontSize: 'clamp(1.05rem, 1.32vw, 1.45rem)',
         color: '#F4F2EE'
       }
     }, it.title[0], /*#__PURE__*/React.createElement("br", null), it.title[1]), /*#__PURE__*/React.createElement("span", {
@@ -2470,6 +2472,8 @@ function PainSection({
     }), /*#__PURE__*/React.createElement("p", {
       className: "zh leading-[1.6] text-[0.88rem]",
       style: {
+        fontSize: '0.92rem',
+        whiteSpace: 'pre-line',
         color: '#EFEDE8'
       }
     }, it.body)))));
@@ -2478,19 +2482,19 @@ function PainSection({
 
 // ─────────────────────────── 03 Why us ────────────────────────────────
 const WHY_ITEMS = [{
-  title: '安全舒適守護',
+  title: '開得穩，坐得舒服',
   en: 'safety & comfort',
-  body: 'Subaru Forester 大空間，過彎平穩、高安全評價，給你最堅實的防護。',
+  body: 'Subaru Forester 車內寬敞，山路行駛也平穩。阿布拉開車，一路坐得放鬆安心。',
   pull: '高安全評價 · 全車防護'
 }, {
-  title: '貼心設備支援',
+  title: '熟悉路況，接送更順',
   en: 'thoughtful hardware',
-  body: '充電線、飲料座、吊掛區一應俱全，並免費代備兒童安全座椅。',
+  body: '先確認時間和接送地點。趕會議、跑幾個點，幫您抓好車程。',
   pull: '高速充電 · 童座代備'
 }, {
-  title: '職人服務',
+  title: '像在地朋友，熟門熟路',
   en: 'a craftsman’s manner',
-  body: '中台灣在地人，守時、不打擾的靜謐服務，也樂於分享私房景點。',
+  body: '想知道附近哪裡吃飯方便、買東西順路？路上有這些小問題，問阿布拉就好。',
   pull: '守時 · 靜謐 · 在地'
 }];
 
@@ -2576,7 +2580,15 @@ function WhyCloud({
     }
   }, /*#__PURE__*/React.createElement("div", {
     className: "relative",
-    style: size
+    style: {
+      ...size,
+      opacity: shown ? 1 : 0,
+      transform: shown ? 'scale(1)' : 'scale(0.3)',
+      transformOrigin: '50% 60%',
+      transition: 'opacity .6s ease, transform .9s cubic-bezier(.2,.9,.3,1.12)',
+      transitionDelay: shown ? `${delay}s` : '0s',
+      willChange: 'transform, opacity'
+    }
   }, /*#__PURE__*/React.createElement("img", {
     src: window.__asset('cloudFrame', 'asset/cloud-frame.webp'),
     alt: "\u624B\u7E6A\u96F2\u6735\u5916\u6846\u88DD\u98FE\uFF08\u88DD\u98FE\u7528\uFF09",
@@ -2596,7 +2608,7 @@ function WhyCloud({
       opacity: shown ? 1 : 0,
       transform: shown ? 'translateY(0)' : 'translateY(16px)',
       transition: 'opacity .9s ease, transform .9s cubic-bezier(.2,.7,.2,1)',
-      transitionDelay: shown ? `${delay}s` : '0s'
+      transitionDelay: shown ? `${delay + 0.35}s` : '0s'
     }
   }, /*#__PURE__*/React.createElement("h3", {
     className: "zh font-bold",
@@ -2643,9 +2655,14 @@ function WhySection({
     dy: -4,
     rot: -5
   }];
-  // Reveal text when this panel is centred in view (panel 03 ≈ idx/(total-1)).
+  // Reveal once this panel is mostly in view (panel 03 ≈ idx/(total-1)); stays shown afterwards.
   const center = idx / (total - 1);
-  const shown = forceShow || Math.abs(progress - center) < 0.07;
+  const near = forceShow || Math.abs(progress - center) < 0.045;
+  const [seen, setSeen] = useState(false);
+  useEffect(() => {
+    if (near) setSeen(true);
+  }, [near]);
+  const shown = seen || near;
   return /*#__PURE__*/React.createElement("section", {
     className: "relative w-screen h-screen flex-shrink-0 grain overflow-hidden",
     "data-screen-label": "03 Why"
@@ -2689,7 +2706,7 @@ function WhySection({
   }, /*#__PURE__*/React.createElement(WhyCloud, {
     w: WHY_ITEMS[0],
     shown: shown,
-    delay: 0.15,
+    delay: 0.1,
     size: {
       width: 'clamp(244px, 25vw, 338px)',
       height: 'clamp(196px, 20.5vw, 276px)'
@@ -2699,7 +2716,7 @@ function WhySection({
   }), /*#__PURE__*/React.createElement(WhyCloud, {
     w: WHY_ITEMS[1],
     shown: shown,
-    delay: 0.3,
+    delay: 0.5,
     size: {
       width: 'clamp(280px, 28.5vw, 388px)',
       height: 'clamp(224px, 23.5vw, 318px)'
@@ -2710,7 +2727,7 @@ function WhySection({
   }), /*#__PURE__*/React.createElement(WhyCloud, {
     w: WHY_ITEMS[2],
     shown: shown,
-    delay: 0.45,
+    delay: 0.9,
     size: {
       width: 'clamp(244px, 25vw, 338px)',
       height: 'clamp(196px, 20.5vw, 276px)'
@@ -2723,7 +2740,18 @@ function WhySection({
     style: {
       zIndex: 30
     }
-  }, HARDWARE_PHOTOS.map((p, k) => /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
+    key: "hwlabel",
+    className: "zh font-bold shrink-0",
+    style: {
+      writingMode: 'vertical-rl',
+      letterSpacing: '0.22em',
+      fontSize: 'clamp(0.92rem, 1.1vw, 1.15rem)',
+      color: 'var(--ink)',
+      borderRight: '2px solid var(--persimmon)',
+      paddingRight: '0.55em'
+    }
+  }, "車內設施"), HARDWARE_PHOTOS.map((p, k) => /*#__PURE__*/React.createElement("div", {
     key: k,
     style: {
       transform: `translateY(${PH[k].dy}px)`
@@ -2875,7 +2903,7 @@ function AboutSection({
   forceShow = false
 }) {
   const center = idx / (total - 1);
-  const shown = forceShow || Math.abs(progress - center) < 0.07;
+  const shown = forceShow || Math.abs(progress - center) < 0.045;
   const IG_URL = 'https://www.instagram.com/kenji.senzaki/';
   return /*#__PURE__*/React.createElement("section", {
     className: "relative w-screen h-screen flex-shrink-0 grain overflow-hidden",
@@ -2908,7 +2936,7 @@ function AboutSection({
     style: {
       color: 'var(--persimmon)'
     }
-  }, "\u963F\u5E03\u62C9"), "\u4ECB\u7D39")), /*#__PURE__*/React.createElement("div", {
+  }, "\u963F\u5E03\u62C9"))), /*#__PURE__*/React.createElement("div", {
     className: "flex-1 grid grid-cols-12 gap-12 items-center mt-[1vh]"
   }, /*#__PURE__*/React.createElement("div", {
     className: "col-span-4 relative flex justify-center"
@@ -2960,22 +2988,23 @@ function AboutSection({
       color: 'var(--ink)',
       textAlign: 'justify'
     }
-  }, "\u6211\u662F\u963F\u5E03\u62C9\uFF0C\u64C1\u6709 ", /*#__PURE__*/React.createElement("span", {
-    className: "en italic font-semibold",
+  }, "我是阿布拉，", /*#__PURE__*/React.createElement("span", {
     style: {
       color: 'var(--persimmon)'
     }
-  }, "3"), " \u5E74\u5305\u8ECA\u63A5\u9001\u7D93\u9A57\u3002\u6211\u5C0D\u300C\u63A5\u9001\u300D\u7684\u7406\u89E3\u4E0D\u53EA\u662F\u628A\u4EBA\u9001\u5230\u4F4D\uFF0C\u800C\u662F\u5275\u9020\u4E00\u500B", /*#__PURE__*/React.createElement("span", {
-    style: {
-      color: 'var(--persimmon)'
-    }
-  }, "\u300C\u4EE5\u5BA2\u4EBA\u70BA\u5148\uFF0C\u8212\u9069\u5B89\u5168\u7684\u884C\u7A0B\u300D"), "\u3002"), /*#__PURE__*/React.createElement("p", {
+  }, "在中台灣長大，也在這裡生活了幾十年"), "。機場接送、跨縣市、家庭出遊或商務用車，都可以找我。"), /*#__PURE__*/React.createElement("p", {
     className: "zh leading-[1.7] text-[1.06rem] mt-4",
     style: {
       color: 'var(--ink-soft)',
       textAlign: 'justify'
     }
-  }, "\u6211\u61C2\u5F97\u5B89\u975C\u5730\u89C0\u5BDF\u5BA2\u6236\u7684\u9700\u6C42\uFF0C\u5728\u60A8\u9700\u8981\u4F11\u606F\u6642\u4FDD\u6301\u7D55\u5C0D\u5B89\u975C\uFF0C\u5728\u60A8\u9700\u8981\u5354\u52A9\u6642\u63D0\u4F9B\u6700\u5C08\u696D\u7684\u670D\u52D9\u3002")), /*#__PURE__*/React.createElement("div", {
+  }, "出發前，我會先確認時間、上下車地點、人數和行李。帶長輩出門，我會想哪裡下車能少走幾步；要跑幾場會議，我會幫您排順接送順序。途中想找地方吃飯或買東西，也可以問我哪裡順路。"), /*#__PURE__*/React.createElement("p", {
+    className: "zh leading-[1.7] text-[1.06rem] mt-4",
+    style: {
+      color: 'var(--ink-soft)',
+      textAlign: 'justify'
+    }
+  }, "需要用車，直接 LINE 告訴我您要去哪裡、幾個人同行就好。")), /*#__PURE__*/React.createElement("div", {
     className: "col-span-3 flex flex-col items-center justify-center gap-5"
   }, /*#__PURE__*/React.createElement("div", {
     className: "text-center"
@@ -3096,21 +3125,21 @@ function AboutSection({
 // ─────────────────────────── 06 For Who ───────────────────────────────
 const AUDIENCES = [{
   tag: 'family',
-  title: '家庭出遊行程',
-  body: '不想讓長輩擠車、帶孩子出遊行李多也不怕，讓專業司機到府接送。',
-  en: 'for your family',
+  title: '機場・跨縣市接送',
+  body: '剛下飛機，推著行李找車，最怕彼此在不同出口等。往返機場、高鐵站或跨縣市，我會先跟您約好容易辨認的上車位置。',
+  en: 'airport & intercity',
   color: 'var(--sage)'
 }, {
   tag: 'friends',
-  title: '三五朋友共遊',
-  body: '想要隨走隨停，那些大眾運輸到不了的「絕美秘境」，阿布拉帶你去。',
-  en: 'for your group',
+  title: '家庭・多人用車',
+  body: '帶爸媽出門，車到了，離入口可能還有一段路。先告訴我誰一起出門，我會幫您想哪裡下車能少走幾步、沿途哪裡方便休息。',
+  en: 'family & groups',
   color: 'var(--mauve)'
 }, {
   tag: 'business',
-  title: '商務接待需求',
-  body: '協助接送會議或活動行程貴賓、配合商務或參訪行程便捷交通接送。',
-  en: 'for your business',
+  title: '商務・團體接送',
+  body: '替訪客約好車，最怕人到了還要打電話問在哪集合。我會先和您確認時間與好找的碰面點，方便您把接送資訊一次交代清楚。',
+  en: 'business & teams',
   color: 'var(--indigo)'
 }];
 function ForWhoSection({
@@ -3197,23 +3226,23 @@ function ForWhoSection({
 
 // ─────────────────────────── 07 FAQ ───────────────────────────────────
 const FAQ = [{
-  q: '收費是否包含油錢、過路費？',
-  a: '報價已包含所有油資與過路費，透明且固定，讓您預算好掌控。'
+  q: '哪些接送需求可以詢問？',
+  a: '機場接送、跨縣市接送、家庭多人用車，以及商務和團體接送，都可以先 LINE 詢問。'
 }, {
-  q: '請問可以幫我們排行程嗎？',
-  a: '我們專注於高品質接送。建議由您決定喜愛的去處，由我來執行最順暢的動線。若遇到突發路況，我也會即時提供在地人的修改建議。'
+  q: '費用怎麼計算？',
+  a: '我會依用車日期與時間、上下車地點、人數、行李和實際行程確認後報價。如果途中需要停靠，也可以一起告訴我。'
 }, {
-  q: '車上有充電設備嗎？',
-  a: '有的！我們提供各類型手機充電線，讓您在旅途中拍照、辦公永不斷電。'
+  q: '幾個人可以搭乘？行李放得下嗎？',
+  a: '請告訴我乘車人數、行李件數和大約尺寸，我會依照這趟的人數和行李，跟您確認乘車安排。'
 }, {
-  q: '我們有帶小孩，需要安全座椅怎麼辦？',
-  a: '沒問題！只要提前告知寶貝的年紀與體重，阿布拉會免費為您代為準備符合安全規範的兒童座椅。'
+  q: '有長輩或小孩同行可以嗎？',
+  a: '可以。如果需要方便上下車的地點、途中安排休息，或有兒童安全座椅需求，請在預約時先提出，我會和您確認可行的安排。'
 }, {
-  q: '阿布拉會跟我們一起下車介紹嗎？',
-  a: '阿布拉不是專業導遊，可以與您們像朋友一樣聊聊自己知道的。下車後的時光仍主要保留給您與同行家人親友夥伴享受私密時光。'
+  q: '可以預約桃園機場／台中機場接送嗎？',
+  a: '可以先 LINE 詢問。請提供航班時間、上下車地點、乘車人數和行李件數，我會跟您確認接送安排。'
 }, {
-  q: '我們有 5–8 人，不想擠一台大 9 人座，這樣能預約嗎？',
-  a: '可以為您安排另一位 5 人座在地司機一起為您服務。'
+  q: '怎麼預約最快？',
+  a: '直接加入 LINE，傳給我用車日期與時間、上車地點、目的地、乘車人數和行李件數。有同行需求或想停靠的地方，也可以一起告訴我。'
 }];
 function FaqSection({
   idx,
@@ -3380,7 +3409,7 @@ function CtaSection({
     href: lineUrl,
     target: "_blank",
     rel: "noreferrer",
-    "aria-label": "\u7ACB\u5373\u900F\u904E LINE \u9810\u7D04",
+    "aria-label": "立即 LINE 詢問用車",
     className: "flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1",
     style: {
       width: 88,
@@ -3407,24 +3436,24 @@ function CtaSection({
     style: {
       color: 'var(--ink)'
     }
-  }, "\u7ACB\u5373\u900F\u904E LINE \u9810\u7D04"), /*#__PURE__*/React.createElement("div", {
-    className: "en italic text-sm mt-0.5",
+  }, "立即 LINE 詢問用車"), /*#__PURE__*/React.createElement("div", {
+    className: "text-sm mt-1",
     style: {
       color: 'var(--ink-soft)'
     }
-  }, "book via LINE"))), /*#__PURE__*/React.createElement("div", {
+  }, "日期・地點・人數傳給阿布拉"))), /*#__PURE__*/React.createElement("div", {
     className: "flex flex-col items-center gap-5"
   }, /*#__PURE__*/React.createElement("a", {
-    href: igUrl,
+    href: lineUrl,
     target: "_blank",
     rel: "noreferrer",
-    "aria-label": "\u67E5\u770B\u963F\u5E03\u62C9\u7684\u8077\u4EBA\u65E5\u5E38 IG",
+    "aria-label": "業者合作洽詢（LINE）",
     className: "flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1",
     style: {
       width: 88,
       height: 88,
       borderRadius: 26,
-      background: 'radial-gradient(circle at 30% 107%, #FDD25C 0%, #FA7E1E 28%, #D62976 60%, #962FBF 80%, #4F5BD5 100%)',
+      background: 'var(--mauve-deep)',
       boxShadow: '0 2px 8px rgba(60,50,35,0.2)'
     }
   }, /*#__PURE__*/React.createElement("svg", {
@@ -3437,7 +3466,7 @@ function CtaSection({
     }
   }, /*#__PURE__*/React.createElement("path", {
     fill: "currentColor",
-    d: "M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+    d: "M12.22 19.85c-.18.18-.5.21-.71 0-.18-.18-.21-.5 0-.71l3.39-3.39-1.41-1.41-3.39 3.39c-.19.2-.51.19-.71 0-.21-.21-.18-.53 0-.71l3.39-3.39-1.41-1.41-3.39 3.39c-.18.18-.5.21-.71 0-.19-.19-.19-.51 0-.71l3.39-3.39-1.42-1.41-3.39 3.39c-.18.18-.5.21-.71 0-.19-.2-.19-.51 0-.71L9.52 8.4l1.87 1.86c.95.95 2.59.94 3.54 0 .98-.98.98-2.56 0-3.54l-1.86-1.86.28-.28c.78-.78 2.05-.78 2.83 0l4.24 4.24c.78.78.78 2.05 0 2.83l-8.2 8.2zm9.61-6.78c1.56-1.56 1.56-4.09 0-5.66l-4.24-4.24c-1.56-1.56-4.09-1.56-5.66 0l-.28.28-.28-.28c-1.56-1.56-4.09-1.56-5.66 0L2.17 6.71c-1.42 1.42-1.55 3.63-.4 5.19l1.45-1.45c-.39-.75-.26-1.7.37-2.33l3.54-3.54c.78-.78 2.05-.78 2.83 0l3.56 3.56c.18.18.21.5 0 .71-.21.21-.53.18-.71 0L9.52 5.57l-5.8 5.79c-.98.97-.98 2.56 0 3.54.39.39.89.63 1.42.7.07.52.3 1.02.7 1.42.4.4.9.63 1.42.7.07.52.3 1.02.7 1.42.4.4.9.63 1.42.7.07.54.31 1.03.7 1.42.47.47 1.1.73 1.77.73.67 0 1.3-.26 1.77-.73l8.21-8.19z"
   }))), /*#__PURE__*/React.createElement("div", {
     className: "zh"
   }, /*#__PURE__*/React.createElement("div", {
@@ -3445,12 +3474,12 @@ function CtaSection({
     style: {
       color: 'var(--ink)'
     }
-  }, "\u67E5\u770B\u6211\u7684\u8077\u4EBA\u65E5\u5E38"), /*#__PURE__*/React.createElement("div", {
-    className: "en italic text-sm mt-0.5",
+  }, "歡迎業者合作洽詢"), /*#__PURE__*/React.createElement("div", {
+    className: "text-sm mt-1",
     style: {
       color: 'var(--ink-soft)'
     }
-  }, "follow on IG"))))), /*#__PURE__*/React.createElement(LegalFooter, null));
+  }, "旅行社・住宿・企業・活動單位"))))), /*#__PURE__*/React.createElement(LegalFooter, null));
 }
 
 // ─── Shared legal footer (copyright + terms / privacy) ────────────────
@@ -3503,7 +3532,23 @@ function LegalFooter({
       opacity: .8,
       letterSpacing: '0.02em'
     }
-  }, "\u7248\u6B0A \xA9 2026 -  (\u4E2D\u53F0\u7063\u5728\u5730\u53F8\u6A5F\u963F\u5E03\u62C9) \u4FDD\u7559\u4E00\u5207\u6B0A\u5229"));
+  }, "\u7248\u6B0A \xA9 2026 - 中台灣在地司機阿布拉 保留一切權利"), /*#__PURE__*/React.createElement("div", {
+    className: "zh",
+    style: {
+      fontSize: mobile ? '0.74rem' : '0.8rem',
+      color: 'var(--ink)',
+      letterSpacing: '0.02em'
+    }
+  }, "Design | ", /*#__PURE__*/React.createElement("a", {
+    href: "https://www.graviflowdesign.com",
+    target: "_blank",
+    rel: "noopener",
+    style: {
+      color: 'var(--ink)',
+      textDecoration: 'underline',
+      textUnderlineOffset: '3px'
+    }
+  }, "引力流域設計")));
 }
 Object.assign(window, {
   HeroSection,
@@ -3574,22 +3619,49 @@ function useMobileProgress() {
     facingRight
   };
 }
+// True once the element has actually been scrolled into view (measured from its
+// on-screen rectangle, so it works inside the horizontal filmstrip too).
 function useInViewBlock(threshold = 0.35) {
   const ref = useRef(null);
   const [shown, setShown] = useState(false);
   useEffect(() => {
     const el = ref.current;
-    if (!el || !('IntersectionObserver' in window)) {
+    if (!el) {
       setShown(true);
       return;
     }
-    const io = new IntersectionObserver(es => es.forEach(e => {
-      if (e.isIntersecting) setShown(true);
-    }), {
-      threshold
-    });
-    io.observe(el);
-    return () => io.disconnect();
+    let done = false,
+      raf = 0,
+      iv = 0;
+    const cleanup = () => {
+      document.removeEventListener('scroll', onScroll, true);
+      window.removeEventListener('resize', onScroll);
+      clearInterval(iv);
+      cancelAnimationFrame(raf);
+    };
+    const check = () => {
+      if (done) return;
+      const r = el.getBoundingClientRect();
+      if (r.width <= 0 || r.height <= 0) return;
+      const vw = window.innerWidth,
+        vh = window.innerHeight;
+      const visW = Math.min(r.right, vw) - Math.max(r.left, 0);
+      const visH = Math.min(r.bottom, vh) - Math.max(r.top, 0);
+      if (visW >= Math.min(r.width, vw) * threshold && visH >= Math.min(r.height, vh) * threshold) {
+        done = true;
+        setShown(true);
+        cleanup();
+      }
+    };
+    function onScroll() {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(check);
+    }
+    document.addEventListener('scroll', onScroll, true);
+    window.addEventListener('resize', onScroll);
+    iv = setInterval(check, 350);
+    check();
+    return cleanup;
   }, [threshold]);
   return [ref, shown];
 }
@@ -3709,7 +3781,7 @@ function MobileCar({
     style: {
       left: `${left}%`,
       bottom: '6vh',
-      width: 104,
+      width: 114,
       zIndex: 41,
       opacity: appear,
       visibility: appear <= 0.01 ? 'hidden' : 'visible'
@@ -3781,7 +3853,7 @@ function MHeroText({
     start: 0,
     label: "01 Hero",
     align: "start",
-    w: tab ? '50vw' : '60vw'
+    w: tab ? '62vw' : '84vw'
   }, /*#__PURE__*/React.createElement(HReveal, null, /*#__PURE__*/React.createElement("img", {
     src: window.__asset('mapPin', 'asset/map-pin.webp'),
     alt: "\u5730\u5716\u5B9A\u4F4D\u5716\u91D8\u88DD\u98FE\u5716\u793A\uFF08\u88DD\u98FE\u7528\uFF09",
@@ -3824,10 +3896,10 @@ function MHeroText({
     style: {
       color: 'var(--ink-soft)',
       fontFamily: 'var(--serif-zh)',
-      fontSize: 'clamp(1rem,4vw,1.2rem)',
-      maxWidth: '30ch'
+      fontSize: tab ? '1.05rem' : 'clamp(0.95rem,4vw,1.2rem)',
+      maxWidth: '38ch'
     }
-  }, "\u628A\u8DEF\u4E0A\u7684\u7463\u4E8B\u4EA4\u7D66", /*#__PURE__*/React.createElement("br", null), "\u4E2D\u53F0\u7063\u5728\u5730\u53F8\u6A5F\u963F\u5E03\u62C9\uFF0C", /*#__PURE__*/React.createElement("br", null), "\u9AD4\u9A57\u771F\u6B63", /*#__PURE__*/React.createElement("span", {
+  }, "在中台灣包車，", /*#__PURE__*/React.createElement("br", null), "可以像有個", /*#__PURE__*/React.createElement("span", {
     className: "en italic align-middle px-0.5",
     style: {
       color: 'var(--persimmon)',
@@ -3838,13 +3910,13 @@ function MHeroText({
     style: {
       color: 'var(--ink)'
     }
-  }, "\u653E\u7A7A"), /*#__PURE__*/React.createElement("span", {
+  }, "在地朋友"), /*#__PURE__*/React.createElement("span", {
     className: "en italic align-middle px-0.5",
     style: {
       color: 'var(--persimmon)',
       fontSize: '1.35em'
     }
-  }, "\""), "\u7684", /*#__PURE__*/React.createElement("br", null), "\u9AD8\u8CEA\u611F\u79FB\u52D5\u751F\u6D3B\u3002")));
+  }, "\""), "來接您那樣。", /*#__PURE__*/React.createElement("br", null), "從機場接送、跨縣市移動，", /*#__PURE__*/React.createElement("br", null), "到家庭出遊與商務用車，", /*#__PURE__*/React.createElement("br", null), "阿布拉熟路、開車穩，", /*#__PURE__*/React.createElement("br", null), "也會替您想怎麼走最方便。")));
 }
 
 // Hero illustration — a bit smaller, its BOTTOM resting on the progress line,
@@ -3876,7 +3948,7 @@ function MHeroImage() {
 // ─────────────────────────── Pain (mobile) ────────────────────────────
 function MPainBlocks(tab) {
   const CAP = '#9C9C9C';
-  const capW = tab ? 'min(30vw,212px)' : 'min(57vw,228px)';
+  const capW = tab ? 'min(34vw,250px)' : 'min(66vw,262px)';
   const capDy = [0, 30, -14, 18]; // gentle stagger, echoing the desktop row
   return [/*#__PURE__*/React.createElement(TitleBlock, {
     key: "t",
@@ -3884,11 +3956,11 @@ function MPainBlocks(tab) {
     label: "02 Pain points",
     en: "have you ever\u2026",
     w: tab ? '54vw' : '88vw'
-  }, "\u4F60\u662F\u5426\u4E5F\u66FE\u9047\u904E", /*#__PURE__*/React.createElement("br", null), "\u9019\u4E9B\u8B93", /*#__PURE__*/React.createElement("span", {
+  }, "預約包車，", /*#__PURE__*/React.createElement("br", null), "您最在意哪些", /*#__PURE__*/React.createElement("span", {
     style: {
       color: 'var(--persimmon)'
     }
-  }, "\u884C\u7A0B"), "\u6263\u5206\u7684", /*#__PURE__*/React.createElement("br", null), "\u77AC\u9593\uFF1F"),
+  }, "細節"), "？"),
   /*#__PURE__*/
   // 4 capsules as one tight row (matched to desktop aspect ratio) — wider, closer together
   React.createElement(Block, {
@@ -3898,7 +3970,7 @@ function MPainBlocks(tab) {
   }, /*#__PURE__*/React.createElement("div", {
     className: "flex items-center",
     style: {
-      gap: tab ? '2.6vw' : '4vw',
+      gap: tab ? '1.6vw' : '2.5vw',
       padding: '0 6vw'
     }
   }, PAIN_ITEMS.map((it, i) => /*#__PURE__*/React.createElement("div", {
@@ -3911,10 +3983,13 @@ function MPainBlocks(tab) {
     stroke: "none",
     style: {
       width: capW,
-      aspectRatio: '238 / 388'
+      aspectRatio: '238 / 362'
     }
   }, /*#__PURE__*/React.createElement("div", {
-    className: "w-full h-full flex flex-col items-center justify-center text-center px-6"
+    className: "w-full h-full flex flex-col items-center justify-center text-center px-6",
+      style: {
+        padding: '0 13%'
+      }
   }, /*#__PURE__*/React.createElement("span", {
     className: "en italic font-medium leading-none mb-2",
     style: {
@@ -3924,7 +3999,7 @@ function MPainBlocks(tab) {
   }, "0", i + 1), /*#__PURE__*/React.createElement("h3", {
     className: "zh font-bold leading-[1.25]",
     style: {
-      fontSize: '1.32rem',
+      fontSize: '1.25rem',
       color: '#F4F2EE'
     }
   }, it.title[0], /*#__PURE__*/React.createElement("br", null), it.title[1]), /*#__PURE__*/React.createElement("span", {
@@ -3938,6 +4013,7 @@ function MPainBlocks(tab) {
     className: "zh leading-[1.7]",
     style: {
       fontSize: '0.95rem',
+      whiteSpace: 'pre-line',
       color: '#EFEDE8'
     }
   }, it.body))))))))];
@@ -3982,6 +4058,24 @@ function MArcPhoto({
     }
   }, label));
 }
+function MWhyCloud({
+  w,
+  dy,
+  size
+}) {
+  const [ref, shown] = useInViewBlock(0.5);
+  return /*#__PURE__*/React.createElement("div", {
+    ref: ref,
+    className: "w-full flex justify-center"
+  }, /*#__PURE__*/React.createElement(WhyCloud, {
+    w: w,
+    shown: shown,
+    delay: 0.05,
+    z: 10,
+    dy: dy,
+    size: size
+  }));
+}
 function MWhyBlocks(tab) {
   const PH = [{
     rot: -6
@@ -4018,16 +4112,11 @@ function MWhyBlocks(tab) {
     blocks.push(/*#__PURE__*/React.createElement(Block, {
       key: 'w' + i,
       w: tab ? '48vw' : '90vw'
-    }, /*#__PURE__*/React.createElement(HReveal, {
-      className: "w-full flex justify-center"
-    }, /*#__PURE__*/React.createElement(WhyCloud, {
+    }, /*#__PURE__*/React.createElement(MWhyCloud, {
       w: w,
-      shown: true,
-      delay: 0,
-      z: 10,
       dy: dys[i],
       size: cloudSize
-    }))));
+    })));
   });
   // hardware: 4 feature photos curving in an arc that wraps the cloud (steep at top-right,
   // flattening toward bottom-left) — a subsidiary of the 3rd cloud. Captions stay clear of neighbours.
@@ -4060,7 +4149,22 @@ function MWhyBlocks(tab) {
     style: {
       height: '72vh'
     }
-  }, HARDWARE_PHOTOS.map((p, k) => /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
+    key: "hwlabel",
+    className: "zh font-bold shrink-0",
+    style: {
+      writingMode: 'vertical-rl',
+      letterSpacing: '0.22em',
+      fontSize: 'clamp(0.92rem, 1.1vw, 1.15rem)',
+      color: 'var(--ink)',
+      borderRight: '2px solid var(--persimmon)',
+      paddingRight: '0.55em',
+      position: 'absolute',
+      left: '4%',
+      top: '10%',
+      fontSize: '1.05rem'
+    }
+  }, "車內設施"), HARDWARE_PHOTOS.map((p, k) => /*#__PURE__*/React.createElement("div", {
     key: k,
     className: "absolute",
     style: {
@@ -4147,7 +4251,7 @@ function MAboutBlocks(tab, igUrl) {
     label: "05 About",
     en: "nice to meet you.",
     w: tab ? '52vw' : '88vw'
-  }, tab ? ["\u4E2D\u53F0\u7063\u5728\u5730\u53F8\u6A5F", /*#__PURE__*/React.createElement("br", { key: "b" }), /*#__PURE__*/React.createElement("span", { key: "s", style: { color: 'var(--persimmon)' } }, "\u963F\u5E03\u62C9"), "\u4ECB\u7D39"] : ["\u4E2D\u53F0\u7063", /*#__PURE__*/React.createElement("br", { key: "b1" }), "\u5728\u5730\u53F8\u6A5F", /*#__PURE__*/React.createElement("br", { key: "b2" }), /*#__PURE__*/React.createElement("span", { key: "s", style: { color: 'var(--persimmon)' } }, "\u963F\u5E03\u62C9"), /*#__PURE__*/React.createElement("br", { key: "b3" }), "\u4ECB\u7D39"]), /*#__PURE__*/React.createElement(Block, {
+  }, tab ? ["\u4E2D\u53F0\u7063\u5728\u5730\u53F8\u6A5F", /*#__PURE__*/React.createElement("br", { key: "b" }), /*#__PURE__*/React.createElement("span", { key: "s", style: { color: 'var(--persimmon)' } }, "\u963F\u5E03\u62C9")] : ["\u4E2D\u53F0\u7063", /*#__PURE__*/React.createElement("br", { key: "b1" }), "\u5728\u5730\u53F8\u6A5F", /*#__PURE__*/React.createElement("br", { key: "b2" }), /*#__PURE__*/React.createElement("span", { key: "s", style: { color: 'var(--persimmon)' } }, "\u963F\u5E03\u62C9")]), /*#__PURE__*/React.createElement(Block, {
     key: "portrait",
     w: tab ? '40vw' : '72vw'
   }, /*#__PURE__*/React.createElement(HReveal, {
@@ -4203,23 +4307,25 @@ function MAboutBlocks(tab, igUrl) {
       color: 'var(--ink)',
       textAlign: 'justify'
     }
-  }, "\u6211\u662F\u963F\u5E03\u62C9\uFF0C\u64C1\u6709 ", /*#__PURE__*/React.createElement("span", {
-    className: "en italic font-semibold",
+  }, "我是阿布拉，", /*#__PURE__*/React.createElement("span", {
     style: {
       color: 'var(--persimmon)'
     }
-  }, "3"), " \u5E74\u5305\u8ECA\u63A5\u9001\u7D93\u9A57\u3002\u6211\u5C0D\u300C\u63A5\u9001\u300D\u7684\u7406\u89E3\u4E0D\u53EA\u662F\u628A\u4EBA\u9001\u5230\u4F4D\uFF0C\u800C\u662F\u5275\u9020\u4E00\u500B", /*#__PURE__*/React.createElement("span", {
-    style: {
-      color: 'var(--persimmon)'
-    }
-  }, "\u300C\u4EE5\u5BA2\u4EBA\u70BA\u5148\uFF0C\u8212\u9069\u5B89\u5168\u7684\u884C\u7A0B\u300D"), "\u3002"), /*#__PURE__*/React.createElement("p", {
+  }, "在中台灣長大，也在這裡生活了幾十年"), "。機場接送、跨縣市、家庭出遊或商務用車，都可以找我。"), /*#__PURE__*/React.createElement("p", {
     className: "zh leading-[1.95] mt-4",
     style: {
       fontSize: '1.04rem',
       color: 'var(--ink-soft)',
       textAlign: 'justify'
     }
-  }, "\u6211\u61C2\u5F97\u5B89\u975C\u5730\u89C0\u5BDF\u5BA2\u6236\u7684\u9700\u6C42\uFF0C\u5728\u60A8\u9700\u8981\u4F11\u606F\u6642\u4FDD\u6301\u7D55\u5C0D\u5B89\u975C\uFF0C\u5728\u60A8\u9700\u8981\u5354\u52A9\u6642\u63D0\u4F9B\u6700\u5C08\u696D\u7684\u670D\u52D9\u3002"))), /*#__PURE__*/React.createElement(MAboutStats, {
+  }, "出發前，我會先確認時間、上下車地點、人數和行李。帶長輩出門，我會想哪裡下車能少走幾步；要跑幾場會議，我會幫您排順接送順序。途中想找地方吃飯或買東西，也可以問我哪裡順路。"), /*#__PURE__*/React.createElement("p", {
+    className: "zh leading-[1.95] mt-4",
+    style: {
+      fontSize: '1.04rem',
+      color: 'var(--ink-soft)',
+      textAlign: 'justify'
+    }
+  }, "需要用車，直接 LINE 告訴我您要去哪裡、幾個人同行就好。"))), /*#__PURE__*/React.createElement(MAboutStats, {
     key: "stats",
     tab: tab,
     igUrl: igUrl
@@ -4229,7 +4335,7 @@ function MAboutStats({
   tab,
   igUrl
 }) {
-  const [ref, shown] = useInViewBlock(0.4);
+  const [ref, shown] = useInViewBlock(0.6);
   return /*#__PURE__*/React.createElement(Block, {
     w: tab ? '44vw' : '84vw'
   }, /*#__PURE__*/React.createElement("div", {
@@ -4382,7 +4488,7 @@ function MForWhoBlocks(tab) {
     style: {
       fontSize: '1.5rem'
     }
-  }, tab ? ["\u3010", a.title, "\u3011"] : (function(){ var L = [["\u5BB6\u5EAD\u51FA\u904A", "\u884C\u7A0B"], ["\u4E09\u4E94\u670B\u53CB", "\u540C\u904A"], ["\u5546\u52D9\u63A5\u5F85", "\u9700\u6C42"]][i]; return [L[0], /*#__PURE__*/React.createElement("br", { key: "cb" }), L[1]]; })()), /*#__PURE__*/React.createElement("div", {
+  }, tab ? ["\u3010", a.title, "\u3011"] : (function(){ var L = [["機場・跨縣市", "接送"], ["家庭・多人", "用車"], ["商務・團體", "接送"]][i]; return [L[0], /*#__PURE__*/React.createElement("br", { key: "cb" }), L[1]]; })()), /*#__PURE__*/React.createElement("div", {
     className: "my-4 mx-auto",
     style: {
       width: 52,
@@ -4503,7 +4609,7 @@ function MCtaBlock({
     href: lineUrl,
     target: "_blank",
     rel: "noreferrer",
-    "aria-label": "\u7ACB\u5373\u900F\u904E LINE \u9810\u7D04",
+    "aria-label": "立即 LINE 詢問用車",
     className: "flex items-center justify-center active:scale-95 transition-transform",
     style: {
       width: 78,
@@ -4529,19 +4635,28 @@ function MCtaBlock({
       fontSize: '1.04rem',
       color: 'var(--ink)'
     }
-  }, "\u7ACB\u5373 LINE \u9810\u7D04")), /*#__PURE__*/React.createElement("div", {
+  }, tab ? "立即 LINE 詢問用車" : ["立即 LINE ", /*#__PURE__*/React.createElement("br", { key: "b" }), "詢問用車"], /*#__PURE__*/React.createElement("div", {
+    key: "sub",
+    style: {
+      fontWeight: 400,
+      fontSize: '0.78rem',
+      lineHeight: 1.5,
+      marginTop: 4,
+      color: 'var(--ink-soft)'
+    }
+  }, tab ? "日期・地點・人數傳給阿布拉" : ["日期・地點・人數", /*#__PURE__*/React.createElement("br", { key: "b" }), "傳給阿布拉"]))), /*#__PURE__*/React.createElement("div", {
     className: "flex flex-col items-center gap-4"
   }, /*#__PURE__*/React.createElement("a", {
-    href: igUrl,
+    href: lineUrl,
     target: "_blank",
     rel: "noreferrer",
-    "aria-label": "\u67E5\u770B\u963F\u5E03\u62C9\u7684\u8077\u4EBA\u65E5\u5E38 IG",
+    "aria-label": "業者合作洽詢（LINE）",
     className: "flex items-center justify-center active:scale-95 transition-transform",
     style: {
       width: 78,
       height: 78,
       borderRadius: 22,
-      background: 'radial-gradient(circle at 30% 107%, #FDD25C 0%, #FA7E1E 28%, #D62976 60%, #962FBF 80%, #4F5BD5 100%)',
+      background: 'var(--mauve-deep)',
       boxShadow: '0 2px 8px rgba(60,50,35,0.2)'
     }
   }, /*#__PURE__*/React.createElement("svg", {
@@ -4554,14 +4669,23 @@ function MCtaBlock({
     }
   }, /*#__PURE__*/React.createElement("path", {
     fill: "currentColor",
-    d: "M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+    d: "M12.22 19.85c-.18.18-.5.21-.71 0-.18-.18-.21-.5 0-.71l3.39-3.39-1.41-1.41-3.39 3.39c-.19.2-.51.19-.71 0-.21-.21-.18-.53 0-.71l3.39-3.39-1.41-1.41-3.39 3.39c-.18.18-.5.21-.71 0-.19-.19-.19-.51 0-.71l3.39-3.39-1.42-1.41-3.39 3.39c-.18.18-.5.21-.71 0-.19-.2-.19-.51 0-.71L9.52 8.4l1.87 1.86c.95.95 2.59.94 3.54 0 .98-.98.98-2.56 0-3.54l-1.86-1.86.28-.28c.78-.78 2.05-.78 2.83 0l4.24 4.24c.78.78.78 2.05 0 2.83l-8.2 8.2zm9.61-6.78c1.56-1.56 1.56-4.09 0-5.66l-4.24-4.24c-1.56-1.56-4.09-1.56-5.66 0l-.28.28-.28-.28c-1.56-1.56-4.09-1.56-5.66 0L2.17 6.71c-1.42 1.42-1.55 3.63-.4 5.19l1.45-1.45c-.39-.75-.26-1.7.37-2.33l3.54-3.54c.78-.78 2.05-.78 2.83 0l3.56 3.56c.18.18.21.5 0 .71-.21.21-.53.18-.71 0L9.52 5.57l-5.8 5.79c-.98.97-.98 2.56 0 3.54.39.39.89.63 1.42.7.07.52.3 1.02.7 1.42.4.4.9.63 1.42.7.07.52.3 1.02.7 1.42.4.4.9.63 1.42.7.07.54.31 1.03.7 1.42.47.47 1.1.73 1.77.73.67 0 1.3-.26 1.77-.73l8.21-8.19z"
   }))), /*#__PURE__*/React.createElement("div", {
     className: "zh font-bold",
     style: {
       fontSize: '1.04rem',
       color: 'var(--ink)'
     }
-  }, "\u8FFD\u8E64\u8077\u4EBA\u65E5\u5E38"))), /*#__PURE__*/React.createElement("div", {
+  }, tab ? "歡迎業者合作洽詢" : ["歡迎業者", /*#__PURE__*/React.createElement("br", { key: "b" }), "合作洽詢"], /*#__PURE__*/React.createElement("div", {
+    key: "sub",
+    style: {
+      fontWeight: 400,
+      fontSize: '0.78rem',
+      lineHeight: 1.5,
+      marginTop: 4,
+      color: 'var(--ink-soft)'
+    }
+  }, tab ? "旅行社・住宿・企業・活動單位" : ["旅行社・住宿・", /*#__PURE__*/React.createElement("br", { key: "b" }), "企業・活動單位"])))), /*#__PURE__*/React.createElement("div", {
     className: "mt-12 flex flex-col items-center gap-2"
   }, /*#__PURE__*/React.createElement("div", {
     className: "flex items-center justify-center gap-3 zh",
@@ -4600,7 +4724,23 @@ function MCtaBlock({
       textAlign: 'center',
       lineHeight: 1.6
     }
-  }, "\u7248\u6B0A \xA9 2026 -  (\u4E2D\u53F0\u7063\u5728\u5730\u53F8\u6A5F\u963F\u5E03\u62C9)", /*#__PURE__*/React.createElement("br", null), "\u4FDD\u7559\u4E00\u5207\u6B0A\u5229"))));
+  }, "\u7248\u6B0A \xA9 2026 - \u4E2D\u53F0\u7063\u5728\u5730\u53F8\u6A5F\u963F\u5E03\u62C9", /*#__PURE__*/React.createElement("br", null), "保留一切權利"), /*#__PURE__*/React.createElement("div", {
+    className: "zh",
+    style: {
+      fontSize: '0.74rem',
+      color: 'var(--ink)',
+      letterSpacing: '0.02em'
+    }
+  }, "Design | ", /*#__PURE__*/React.createElement("a", {
+    href: "https://www.graviflowdesign.com",
+    target: "_blank",
+    rel: "noopener",
+    style: {
+      color: 'var(--ink)',
+      textDecoration: 'underline',
+      textUnderlineOffset: '3px'
+    }
+  }, "引力流域設計")))));
 }
 
 // ─────────────────────────── Mobile site (horizontal) ─────────────────
@@ -5341,7 +5481,7 @@ function CarLayer({
   // No vertical bounce — straight-line travel only.
   const bounceY = 0;
   // Car always small — drives along the road (progress rail)
-  const widthPx = 130;
+  const widthPx = 170;
   // Moves horizontally with scroll progress (left → right), in a straight line.
   const baseLeft = 18 + progress * 60; // sweeps 18% … 78% across the viewport
   // Car only appears from the Pain section (panel 02) onward — hidden during hero.
