@@ -2992,13 +2992,13 @@ function AboutSection({
     style: {
       color: 'var(--persimmon)'
     }
-  }, "在中台灣長大，也在這裡生活了幾十年"), "。機場接送、跨縣市、家庭出遊或商務用車，都可以找我。"), /*#__PURE__*/React.createElement("p", {
+  }, "在中台灣長大，在這裡生活了幾十年"), "。機場接送、跨縣市移動、家庭出遊或商務用車，都可以找我。"), /*#__PURE__*/React.createElement("p", {
     className: "zh leading-[1.7] text-[1.06rem] mt-4",
     style: {
       color: 'var(--ink-soft)',
       textAlign: 'justify'
     }
-  }, "出發前，我會先確認時間、上下車地點、人數和行李。帶長輩出門，我會想哪裡下車能少走幾步；要跑幾場會議，我會幫您排順接送順序。途中想找地方吃飯或買東西，也可以問我哪裡順路。"), /*#__PURE__*/React.createElement("p", {
+  }, "出發前，我會先確認時間、上下車地點、人數和行李，再照您的需求安排接送。帶長輩出門、要跑幾場會議，或途中想順路吃個飯，都可以先跟我聊聊。"), /*#__PURE__*/React.createElement("p", {
     className: "zh leading-[1.7] text-[1.06rem] mt-4",
     style: {
       color: 'var(--ink-soft)',
@@ -4296,7 +4296,11 @@ function MAboutBlocks(tab, igUrl) {
     key: "bio",
     align: "start",
     w: tab ? '56vw' : '88vw'
-  }, /*#__PURE__*/React.createElement(HReveal, null, /*#__PURE__*/React.createElement("span", {
+  }, /*#__PURE__*/React.createElement(HReveal, {
+    style: {
+      paddingBottom: tab ? 0 : '12vh'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
     className: "block mb-5",
     style: {
       width: 46,
@@ -4315,7 +4319,7 @@ function MAboutBlocks(tab, igUrl) {
     style: {
       color: 'var(--persimmon)'
     }
-  }, "在中台灣長大，也在這裡生活了幾十年"), "。機場接送、跨縣市、家庭出遊或商務用車，都可以找我。"), /*#__PURE__*/React.createElement("p", {
+  }, "在中台灣長大，在這裡生活了幾十年"), "。機場接送、跨縣市移動、家庭出遊或商務用車，都可以找我。"), /*#__PURE__*/React.createElement("p", {
     className: "zh leading-[1.95] mt-4",
     style: {
       lineHeight: 1.62,
@@ -4323,7 +4327,7 @@ function MAboutBlocks(tab, igUrl) {
       color: 'var(--ink-soft)',
       textAlign: 'justify'
     }
-  }, "出發前，我會先確認時間、上下車地點、人數和行李。帶長輩出門，我會想哪裡下車能少走幾步；要跑幾場會議，我會幫您排順接送順序。途中想找地方吃飯或買東西，也可以問我哪裡順路。"), /*#__PURE__*/React.createElement("p", {
+  }, "出發前，我會先確認時間、上下車地點、人數和行李，再照您的需求安排接送。帶長輩出門、要跑幾場會議，或途中想順路吃個飯，都可以先跟我聊聊。"), /*#__PURE__*/React.createElement("p", {
     className: "zh leading-[1.95] mt-4",
     style: {
       lineHeight: 1.62,
@@ -4588,7 +4592,7 @@ function MCtaBlock({
   }, /*#__PURE__*/React.createElement(HReveal, {
     className: "text-center",
     style: {
-      paddingBottom: '9vh'
+      paddingBottom: 'calc(9vh - 30px)'
     }
   }, /*#__PURE__*/React.createElement("h2", {
     className: "zh font-bold leading-[1.4] text-center",
@@ -4696,7 +4700,10 @@ function MCtaBlock({
       color: 'var(--ink-soft)'
     }
   }, tab ? "旅行社・住宿・企業・活動單位" : ["旅行社・住宿・", /*#__PURE__*/React.createElement("br", { key: "b" }), "企業・活動單位"])))), /*#__PURE__*/React.createElement("div", {
-    className: "mt-6 flex flex-col items-center gap-1"
+    className: "mt-6 flex flex-col items-center gap-1",
+    style: {
+      marginTop: 54
+    }
   }, /*#__PURE__*/React.createElement("div", {
     className: "flex items-center justify-center gap-3 zh",
     style: {
