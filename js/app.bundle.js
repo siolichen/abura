@@ -3921,7 +3921,9 @@ function MHeroText({
 
 // Hero illustration — a bit smaller, its BOTTOM resting on the progress line,
 // and wide enough that its left edge already peeks before you scroll.
-function MHeroImage() {
+function MHeroImage({
+  tab
+}) {
   const illoRef = useRef(null);
   const [ref, shown] = useInViewBlock(0.2);
   // entrance animation removed — hero illustration is static on mobile/tablet
@@ -3929,6 +3931,7 @@ function MHeroImage() {
     className: "shrink-0 h-screen flex items-end",
     style: {
       width: 'calc(80vh * 1412 / 1086)',
+      marginLeft: tab ? '-12vw' : '-24vw',
       paddingBottom: '6.8vh'
     }
   }, /*#__PURE__*/React.createElement("div", {
@@ -4303,6 +4306,7 @@ function MAboutBlocks(tab, igUrl) {
   }), /*#__PURE__*/React.createElement("p", {
     className: "zh leading-[1.95]",
     style: {
+      lineHeight: 1.62,
       fontSize: '1.08rem',
       color: 'var(--ink)',
       textAlign: 'justify'
@@ -4314,6 +4318,7 @@ function MAboutBlocks(tab, igUrl) {
   }, "在中台灣長大，也在這裡生活了幾十年"), "。機場接送、跨縣市、家庭出遊或商務用車，都可以找我。"), /*#__PURE__*/React.createElement("p", {
     className: "zh leading-[1.95] mt-4",
     style: {
+      lineHeight: 1.62,
       fontSize: '1.04rem',
       color: 'var(--ink-soft)',
       textAlign: 'justify'
@@ -4321,6 +4326,7 @@ function MAboutBlocks(tab, igUrl) {
   }, "出發前，我會先確認時間、上下車地點、人數和行李。帶長輩出門，我會想哪裡下車能少走幾步；要跑幾場會議，我會幫您排順接送順序。途中想找地方吃飯或買東西，也可以問我哪裡順路。"), /*#__PURE__*/React.createElement("p", {
     className: "zh leading-[1.95] mt-4",
     style: {
+      lineHeight: 1.62,
       fontSize: '1.04rem',
       color: 'var(--ink-soft)',
       textAlign: 'justify'
@@ -4544,16 +4550,16 @@ function MFaqStrip({
       "aria-expanded": open
     }, React.createElement("div", {
       className: "flex items-baseline",
-      style: { gap: tab ? '1.1rem' : '0.65rem', padding: tab ? '1.35vh 0' : '0.5vh 0' }
+      style: { gap: tab ? '1.1rem' : '0.65rem', padding: tab ? '0.45vh 0' : '0' }
     }, React.createElement("span", {
       className: "font-bold flex-shrink-0",
-      style: { fontFamily: "'Noto Serif TC',serif", fontSize: tab ? '1.5rem' : '1.08rem', color: 'var(--persimmon)', letterSpacing: '0.01em' }
+      style: { fontFamily: "'Noto Serif TC',serif", fontSize: tab ? '1.2rem' : '0.97rem', lineHeight: 1.25, color: 'var(--persimmon)', letterSpacing: '0.01em' }
     }, "Q", i + 1, "."), React.createElement("span", {
       className: "zh font-semibold leading-[1.4] flex-1",
-      style: { fontSize: tab ? '1.18rem' : '0.97rem', color: 'var(--ink)' }
+      style: { fontSize: tab ? '1.18rem' : '0.97rem', lineHeight: 1.25, color: 'var(--ink)' }
     }, f.q), React.createElement("span", {
       className: "flex-shrink-0 transition-transform",
-      style: { fontSize: '1.4rem', fontWeight: 300, lineHeight: 1, color: 'var(--ink-soft)', transform: open ? 'rotate(45deg)' : 'none' }
+      style: { fontSize: tab ? '1.1rem' : '0.9rem', fontWeight: 300, lineHeight: 1, color: 'var(--ink-soft)', transform: open ? 'rotate(45deg)' : 'none' }
     }, "\uFF0B")), React.createElement("div", {
       className: "overflow-hidden transition-all",
       style: { maxHeight: open ? 360 : 0, opacity: open ? 1 : 0 }
@@ -4579,7 +4585,10 @@ function MCtaBlock({
     align: "center",
     w: tab ? '64vw' : '94vw'
   }, /*#__PURE__*/React.createElement(HReveal, {
-    className: "text-center"
+    className: "text-center",
+    style: {
+      paddingBottom: '9vh'
+    }
   }, /*#__PURE__*/React.createElement("h2", {
     className: "zh font-bold leading-[1.4] text-center",
     style: {
@@ -4602,7 +4611,7 @@ function MCtaBlock({
       color: 'var(--mauve-deep)'
     }
   }, "\u98A8\u666F\u548C\u5BB6\u4EBA"), /*#__PURE__*/React.createElement("br", null), "\u7559\u7D66\u81EA\u5DF1\u3002"), /*#__PURE__*/React.createElement("div", {
-    className: "mt-12 flex items-start justify-center gap-12"
+    className: "mt-9 flex items-start justify-center gap-12"
   }, /*#__PURE__*/React.createElement("div", {
     className: "flex flex-col items-center gap-4"
   }, /*#__PURE__*/React.createElement("a", {
@@ -4686,11 +4695,11 @@ function MCtaBlock({
       color: 'var(--ink-soft)'
     }
   }, tab ? "旅行社・住宿・企業・活動單位" : ["旅行社・住宿・", /*#__PURE__*/React.createElement("br", { key: "b" }), "企業・活動單位"])))), /*#__PURE__*/React.createElement("div", {
-    className: "mt-12 flex flex-col items-center gap-2"
+    className: "mt-6 flex flex-col items-center gap-1"
   }, /*#__PURE__*/React.createElement("div", {
     className: "flex items-center justify-center gap-3 zh",
     style: {
-      fontSize: '0.92rem'
+      fontSize: '0.74rem'
     }
   }, /*#__PURE__*/React.createElement("a", {
     href: "terms.html",
@@ -4912,7 +4921,9 @@ function MobileSite({
     style: { width: 'max-content' }
   }, React.createElement(MHeroText, {
     tab: tab
-  }), React.createElement(MHeroImage, null), MPainBlocks(tab), MWhyBlocks(tab), MVoiceBlocks(tab), MAboutBlocks(tab, igUrl), MForWhoBlocks(tab), React.createElement(MFaqStrip, {
+  }), React.createElement(MHeroImage, {
+    tab: tab
+  }), MPainBlocks(tab), MWhyBlocks(tab), MVoiceBlocks(tab), MAboutBlocks(tab, igUrl), MForWhoBlocks(tab), React.createElement(MFaqStrip, {
     tab: tab
   }), React.createElement(MCtaBlock, {
     lineUrl: lineUrl,
