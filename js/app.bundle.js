@@ -3303,11 +3303,7 @@ function FaqSection({
       color: 'var(--ink)'
     }
   }, "LINE"), " \u76F4\u63A5\u8A62\u554F\u963F\u5E03\u62C9\uFF0C\u6211\u6703\u5728\u6536\u5230\u8A0A\u606F\u5F8C\u76E1\u5FEB\u56DE\u8986\u3002")), /*#__PURE__*/React.createElement("div", {
-    className: "col-span-8 flex flex-col justify-between",
-    style: {
-      justifyContent: 'center',
-      gap: '0.6rem'
-    }
+    className: "col-span-8 flex flex-col justify-between"
   }, FAQ.map((f, i) => {
     const isOpen = open === i;
     return /*#__PURE__*/React.createElement("button", {
@@ -3322,20 +3318,14 @@ function FaqSection({
     }, /*#__PURE__*/React.createElement(BrushBlock, {
       color: isOpen ? 'var(--paper-deep)' : 'var(--paper)',
       edge: "soft",
-      rounded: 14,
+      rounded: 22,
       flyaway: 0.25,
       className: "transition-all"
     }, /*#__PURE__*/React.createElement("div", {
-      className: "px-7 py-[1.05rem] flex items-start gap-5",
-      style: {
-        paddingTop: '0.05rem',
-        paddingBottom: '0.05rem'
-      }
+      className: "px-7 py-[1.05rem] flex items-start gap-5"
     }, /*#__PURE__*/React.createElement("span", {
       className: "font-semibold text-2xl flex-shrink-0 mt-[-1px]",
       style: {
-        fontSize: '1.12rem',
-        lineHeight: 1.4,
         fontFamily: "'Fraunces','Noto Serif TC',serif",
         color: 'var(--persimmon)'
       }
@@ -3344,7 +3334,6 @@ function FaqSection({
     }, /*#__PURE__*/React.createElement("div", {
       className: "zh font-semibold text-[1.08rem] leading-[1.5]",
       style: {
-        lineHeight: 1.4,
         color: 'var(--ink)'
       }
     }, f.q), /*#__PURE__*/React.createElement("div", {
@@ -3368,8 +3357,6 @@ function FaqSection({
     }, "A."), f.a))), /*#__PURE__*/React.createElement("span", {
       className: "text-2xl opacity-60 flex-shrink-0 transition-transform",
       style: {
-        fontSize: '1.12rem',
-        lineHeight: 1.4,
         color: 'var(--ink)',
         transform: isOpen ? 'rotate(45deg)' : 'rotate(0deg)'
       }
@@ -4560,20 +4547,20 @@ function MFaqStrip({
     }, React.createElement("button", {
       onClick: () => setOpenIdx(open ? -1 : i),
       className: "text-left w-full",
-      style: { display: 'block', lineHeight: 1.1 },
+      style: tab ? undefined : { display: 'block' },
       "aria-expanded": open
     }, React.createElement("div", {
       className: "flex items-baseline",
-      style: { gap: tab ? '1.1rem' : '0.65rem', padding: tab ? '0.2vh 0' : '0', lineHeight: 1.1 }
+      style: { gap: tab ? '1.1rem' : '0.65rem', padding: tab ? '1.35vh 0' : '5px 0' }
     }, React.createElement("span", {
       className: "font-bold flex-shrink-0",
-      style: { fontFamily: "'Noto Serif TC',serif", fontSize: tab ? '1.1rem' : '0.97rem', lineHeight: 1.15, color: 'var(--persimmon)', letterSpacing: '0.01em' }
+      style: { fontFamily: "'Noto Serif TC',serif", fontSize: tab ? '1.5rem' : '1rem', lineHeight: tab ? undefined : 1.25, color: 'var(--persimmon)', letterSpacing: '0.01em' }
     }, "Q", i + 1, "."), React.createElement("span", {
       className: "zh font-semibold leading-[1.4] flex-1",
-      style: { fontSize: tab ? '1.1rem' : '0.97rem', lineHeight: 1.15, color: 'var(--ink)' }
+      style: { fontSize: tab ? '1.18rem' : '0.97rem', lineHeight: tab ? undefined : 1.25, color: 'var(--ink)' }
     }, f.q), React.createElement("span", {
       className: "flex-shrink-0 transition-transform",
-      style: { fontSize: tab ? '1.1rem' : '0.9rem', fontWeight: 300, lineHeight: 1, color: 'var(--ink-soft)', transform: open ? 'rotate(45deg)' : 'none' }
+      style: { fontSize: tab ? '1.4rem' : '1.1rem', fontWeight: 300, lineHeight: 1, color: 'var(--ink-soft)', transform: open ? 'rotate(45deg)' : 'none' }
     }, "\uFF0B")), React.createElement("div", {
       className: "overflow-hidden transition-all",
       style: { maxHeight: open ? 360 : 0, opacity: open ? 1 : 0 }
