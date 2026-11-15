@@ -4551,7 +4551,7 @@ function MFaqStrip({
       "aria-expanded": open
     }, React.createElement("div", {
       className: "flex items-baseline",
-      style: { gap: tab ? '1.1rem' : '0.65rem', padding: tab ? '1.35vh 0' : '5px 0' }
+      style: { gap: tab ? '1.1rem' : '0.65rem', padding: tab ? '1.35vh 0' : '12.5px 0' }
     }, React.createElement("span", {
       className: "font-bold flex-shrink-0",
       style: { fontFamily: "'Noto Serif TC',serif", fontSize: tab ? '1.5rem' : '1rem', lineHeight: tab ? undefined : 1.25, color: 'var(--persimmon)', letterSpacing: '0.01em' }
