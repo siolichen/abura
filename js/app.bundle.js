@@ -3125,21 +3125,21 @@ function AboutSection({
 // ─────────────────────────── 06 For Who ───────────────────────────────
 const AUDIENCES = [{
   tag: 'family',
-  title: '機場・跨縣市接送',
-  body: '剛下飛機，推著行李找車，最怕彼此在不同出口等。往返機場、高鐵站或跨縣市，我會先跟您約好容易辨認的上車位置。',
-  en: 'airport & intercity',
+  title: '家庭出遊行程',
+  body: '不想讓長輩擠車、帶孩子出遊行李多也不怕，讓專業司機到府接送。',
+  en: 'for your family',
   color: 'var(--sage)'
 }, {
   tag: 'friends',
-  title: '家庭・多人用車',
-  body: '帶爸媽出門，車到了，離入口可能還有一段路。先告訴我誰一起出門，我會幫您想哪裡下車能少走幾步、沿途哪裡方便休息。',
-  en: 'family & groups',
+  title: '三五朋友共遊',
+  body: '想要隨走隨停，那些大眾運輸到不了的「絕美秘境」，阿布拉帶你去。',
+  en: 'for your group',
   color: 'var(--mauve)'
 }, {
   tag: 'business',
-  title: '商務・團體接送',
-  body: '替訪客約好車，最怕人到了還要打電話問在哪集合。我會先和您確認時間與好找的碰面點，方便您把接送資訊一次交代清楚。',
-  en: 'business & teams',
+  title: '商務接待需求',
+  body: '協助接送會議或活動行程貴賓、配合商務或參訪行程便捷交通接送。',
+  en: 'for your business',
   color: 'var(--indigo)'
 }];
 function ForWhoSection({
@@ -4498,7 +4498,7 @@ function MForWhoBlocks(tab) {
     style: {
       fontSize: '1.5rem'
     }
-  }, tab ? ["\u3010", a.title, "\u3011"] : (function(){ var L = [["機場・跨縣市", "接送"], ["家庭・多人", "用車"], ["商務・團體", "接送"]][i]; return [L[0], /*#__PURE__*/React.createElement("br", { key: "cb" }), L[1]]; })()), /*#__PURE__*/React.createElement("div", {
+  }, tab ? ["\u3010", a.title, "\u3011"] : (function(){ var L = [["家庭出遊", "行程"], ["三五朋友", "共遊"], ["商務接待", "需求"]][i]; return [L[0], /*#__PURE__*/React.createElement("br", { key: "cb" }), L[1]]; })()), /*#__PURE__*/React.createElement("div", {
     className: "my-4 mx-auto",
     style: {
       width: 52,
